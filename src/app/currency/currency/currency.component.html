@@ -1,0 +1,19 @@
+<div class="dropdown">
+  <h4>Currency List</h4>
+  <div class="tableDiv">
+    <table class="table">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Symbol</th>
+      </tr>
+      <tr *ngFor="let currency of countryDetails; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ currency.name }}</td>
+        <td>{{ currency.code }}</td>
+        <td>{{ currency.symbol }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

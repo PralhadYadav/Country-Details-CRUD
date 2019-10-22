@@ -1,0 +1,17 @@
+<div class="dropdown">
+  <h4>Language List</h4>
+  <div class="tableDiv">
+    <table class="table">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Native Name</th>
+      </tr>
+      <tr *ngFor="let language of countryDetails; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ language.name }}</td>
+        <td>{{ language.nativeName }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

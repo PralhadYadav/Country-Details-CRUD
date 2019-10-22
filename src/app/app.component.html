@@ -1,0 +1,31 @@
+<div class="wrapper">
+  <nav id="sidebar">
+    <ul class="list-unstyled components">
+      <li><a class="nav-link" [routerLink]="['/']">Home</a></li>
+      <li>
+        <a class="nav-link" [routerLink]="['/language']">Language List</a>
+      </li>
+      <li>
+        <a class="nav-link" [routerLink]="['/currency']">Currency List</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="dropdown">
+  <select class="form-group" (change)="selectedCountry($event.target.value)">
+    <option class="form-control" value="selected" selected
+      >Select a country</option
+    >
+    <option
+      class="form-control"
+      *ngFor="let country of countries"
+      [value]="country.alpha3Code"
+      >{{ country.name }}</option
+    >
+  </select>
+</div>
+
+<hr />
+
+<router-outlet></router-outlet>

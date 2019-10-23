@@ -45,7 +45,7 @@ describe("AppComponent", () => {
   });
 
   it("Should render Country list dropdown", () => {
-    const dropdown = fixture.debugElement.query(By.css(".dropdown"));
+    const dropdown = fixture.debugElement.query(By.css(".sidebarSpace"));
     expect(dropdown).toBeDefined();
   });
 

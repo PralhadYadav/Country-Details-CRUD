@@ -2,6 +2,7 @@
 .sidebarSpace {
   margin-left: 250px;
   margin-top: 2%;
+  position: relative;
 }
 
 table,

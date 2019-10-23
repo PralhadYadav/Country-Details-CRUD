@@ -33,7 +33,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 1. User don't need to select country on every page (Component).
 2. Once country is selected their details will be available on all of the pages (Component).
 3. Side bar panel menu is not implemented using given bootstrap 4 demo UI as it is taking more time to load and will take much time for modification to make changes as needed.
-
+4. If user select "Select a country" (default) option from dropdown, blank values are loaded in all the components.
 
 
 
